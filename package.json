@@ -1,0 +1,18 @@
+{
+  "name": "quickfind",
+  "version": "0.0.1",
+  "main": "QuickFind.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "description": "## Overview",
+  "dependencies": {
+    "ansi-regex": "^4.1.1",
+    "strip-ansi": "^5.2.0"
+  }
+}

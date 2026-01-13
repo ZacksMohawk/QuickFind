@@ -14,5 +14,13 @@
   "dependencies": {
     "ansi-regex": "^4.1.1",
     "strip-ansi": "^5.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZacksMohawk/QuickFind.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZacksMohawk/QuickFind/issues"
+  },
+  "homepage": "https://github.com/ZacksMohawk/QuickFind#readme"
 }

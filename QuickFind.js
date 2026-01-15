@@ -1,5 +1,5 @@
 global.appType = "QuickFind";
-global.version = "0.0.1";
+global.version = "0.0.2";
 
 const fs = require('fs');
 const prompt = require('prompt-sync')({});
@@ -12,7 +12,7 @@ Logger.log();
 
 
 let folderPath = __dirname;
-if (process.argv.indexOf("-configPath") != -1){
+if (process.argv.indexOf("-folderPath") != -1){
 	folderPath = process.argv[process.argv.indexOf("-folderPath") + 1];
 }
 
@@ -152,6 +152,11 @@ function displayTextResults(resultsArray){
 	for (let index = 0; index < resultsArray.length; index++){
 		let result = resultsArray[index];
 		if (!result){
+			resultsArray.splice(index, 1);
+			index--;
+			continue;
+		}
+		if (!result.includes(":")){
 			resultsArray.splice(index, 1);
 			index--;
 			continue;
